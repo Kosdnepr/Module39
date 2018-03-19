@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let article of articles$ | async"
+    routerLink="/articles/{{article.id}}">
+      "{{ article.title }}", <span>author {{ article.userId | idToUsername }}</span>
+  </li>
+</ul>
